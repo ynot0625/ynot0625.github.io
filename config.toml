@@ -31,10 +31,10 @@ canonifyurls = true
   archive = "archives"
 
 [author]
-  name = "Firstname Lastname"
+  name = "Y.J KIM"
   bio = "Super bio with markdown support **COOL**"
   job = "Your job title"
-  location = "France"
+  location = "South Korea"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
   gravatarEmail = "thibaud.lepretre@gmail.com"
   # Your profile picture
