@@ -1,0 +1,1 @@
+# ynot0625.github.io
