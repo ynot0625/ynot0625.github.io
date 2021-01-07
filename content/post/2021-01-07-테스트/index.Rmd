@@ -8,9 +8,9 @@ tags: []
 keywords:
   - tech
 ---
-![](images/333.PNG)
-<!--more-->
 
+<!--more-->
+![](./images/333.PNG)
 ```{r}
 
 print("hellow world")
