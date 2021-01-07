@@ -25,7 +25,7 @@ canonifyurls = true
 # robots.txt
 enableRobotsTXT = true
 
-
+favicon = "/favicon.ico"
 
 [permalinks]
   post = "/:year/:month/:slug/"
