@@ -4,6 +4,8 @@ author: YJ.KIM
 date: '2021-01-07'
 slug: test
 categories: []
+coverImage: //res.cloudinary.com/ynot-gallery/image/upload/v1610006599/samples/landscapes/girl-urban-view.jpg
+coverMeta: out
 #coverImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg
 #coverMeta: out
 # Featured image
@@ -11,7 +13,7 @@ categories: []
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 tags:
 - cover image
-thumbnailImage: //http://res.cloudinary.com/ynot-gallery/image/upload/v1610006602/samples/animals/three-dogs.jpg
+thumbnailImage: //res.cloudinary.com/ynot-gallery/image/upload/v1610006701/featured_pl5sn3.png
 thumbnailImagePosition: left
 metaAlignment: left
 ---  
