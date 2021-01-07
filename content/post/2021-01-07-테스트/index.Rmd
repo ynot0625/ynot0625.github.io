@@ -1,0 +1,17 @@
+---
+title: 나는 너를
+author: YJ.KIM
+date: '2021-01-07'
+slug: test
+categories: []
+tags: []
+keywords:
+  - tech
+---
+![](images/333.PNG)
+<!--more-->
+
+```{r}
+
+print("hellow world")
+```
