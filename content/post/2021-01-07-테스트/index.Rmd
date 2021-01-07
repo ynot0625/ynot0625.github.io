@@ -11,7 +11,7 @@ categories: []
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 tags:
 - cover image
-thumbnailImage: //http://res.cloudinary.com/ynot-gallery/image/upload/v1610006602/samples/animals/three-dogs.jpg
+thumbnailImage: //res.cloudinary.com/ynot-gallery/image/upload/v1610006602/samples/animals/three-dogs.jpg
 thumbnailImagePosition: left
 metaAlignment: left
 ---  
