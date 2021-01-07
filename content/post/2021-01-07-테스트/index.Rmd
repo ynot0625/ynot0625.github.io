@@ -4,6 +4,8 @@ author: YJ.KIM
 date: '2021-01-07'
 slug: test
 categories: []
+coverImage: //res.cloudinary.com/ynot-gallery/image/upload/v1610006599/samples/landscapes/girl-urban-view.jpg
+coverMeta: out
 #coverImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg
 #coverMeta: out
 # Featured image
