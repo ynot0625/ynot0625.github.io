@@ -1,0 +1,13 @@
+---
+title: desc-test
+author: ''
+date: '2021-01-07'
+slug: desc-test
+categories: []
+tags: []
+keywords:
+  - tech
+description: Description 기능이 RMarkdown 파일에서도 정상적으로 작동하나요?
+---
+
+<!--more-->
