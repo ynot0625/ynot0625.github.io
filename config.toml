@@ -18,7 +18,7 @@ defaultContentLanguage = "en-us"
 title = "Ynot?"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "hugo-tranquilpeak-theme33"
-# googleAnalytics = "UA-123-45"
+googleAnalytics = "UA-186842731-1"
 paginate = 7
 canonifyurls = true
 
