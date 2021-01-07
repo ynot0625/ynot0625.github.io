@@ -8,33 +8,30 @@ tags: []
 keywords:
   - tech
 description: Description 기능이 RMarkdown 파일에서도 정상적으로 작동하나요?
+output: html_document
 ---
 
 <!--more-->
 ```{r setup, include=FALSE}
 library(leaflet)
+library(leaflet.extras)
 library(raster)
 library(rmapshaper)
 library(ggplot2)
 library(dplyr)
 library(tidyr)
+library(htmltools)
 ```
 
+<style>
+.html-widget {
+    margin: auto;
+}
+</style>
 
-
-```{r}
-stn <- read.csv('gis/station_info_201909.csv')
-#pal <- colorFactor("YlOrRd", stn$pm2.5)
-seoul <- shapefile("gis/TL_SCCO_CTPRVN.shp")
-seoul <- seoul[seoul$CTPRVN_CD == 11, ]
-seoul <- spTransform(seoul, CRS("+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"))
-seoul <- ms_simplify(seoul)
-pal <- colorNumeric("Spectral", stn$pm2.5, reverse = TRUE)
-leaflet(stn) %>%
-  setView(lng=126.9784, lat=37.566, zoom=10) %>%
-  addProviderTiles('CartoDB.Positron') %>%
-  addCircles(lng=~lon, lat=~lat, popup = ~name, color=~pal(pm2.5)) %>%
-  addLegend(position = 'bottomright', 
-            title = 'PM2.5(ug/m3)', 
-            pal = pal, values = ~pm2.5, opacity = 1)
+```{r leaflet, fig.align="center"}
+library(leaflet)
+library(leaflet)
+m <- leaflet() %>% addProviderTiles(providers$CartoDB.Positron)  
+m
 ```
