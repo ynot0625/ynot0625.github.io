@@ -43,7 +43,7 @@ m<-leaflet(stn) %>%
 saveWidget(m, file="m.html")
 #knitr::include_graphics("./m.html")
 #frameWidget(m, width = "100%")  
-
+help("addCircles")
 ```
 ![my graph](m.html){height="500" width=100% }
 
