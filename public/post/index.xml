@@ -14,17 +14,6 @@
       
       <guid>/2021/01/desc-test/</guid>
       <description>
-&lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;{{&lt; blogdown/postref &gt;}}index_files/leaflet/leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/leaflet/leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;{{&lt; blogdown/postref &gt;}}index_files/leafletfix/leafletfix.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/Proj4Leaflet/proj4-compressed.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/Proj4Leaflet/proj4leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;{{&lt; blogdown/postref &gt;}}index_files/rstudio_leaflet/rstudio_leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/leaflet-binding/leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/leaflet-providers/leaflet-providers_1.9.0.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/leaflet-providers-plugin/leaflet-providers-plugin.js&#34;&gt;&lt;/script&gt;
 
 
 </description>
