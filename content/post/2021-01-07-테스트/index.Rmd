@@ -1,5 +1,6 @@
 ---
 title: 나는 너를
+description: 블로그 운영 테스트
 author: YJ.KIM
 date: '2021-01-07'
 slug: test
@@ -16,6 +17,7 @@ tags:
 thumbnailImage: //res.cloudinary.com/ynot-gallery/image/upload/v1610006701/featured_pl5sn3.png
 thumbnailImagePosition: left
 metaAlignment: left
+
 ---  
 
 <!--more-->
