@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ynot?</title>
-    <link>/</link>
-    <description>Recent content on Ynot?</description>
+    <title>Books on Ynot?</title>
+    <link>/book/</link>
+    <description>Recent content in Books on Ynot?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/book/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome</title>
       <link>/book/welcome/</link>
@@ -15,31 +15,6 @@
       <guid>/book/welcome/</guid>
       <description>1. 마크다운(Markdown)에 관하여1.1 마크다운이란?마크다운(Markdown)은 마크업 언어의 일종으로, 존 그루버(John Gruber)와 아론 스워츠(Aaron Swartz)가 만들었다. 각종 태그를 사용하는 HTML문서와 달리, 읽기도 쓰기도 쉬운 문서 양식을 지원한다.
 2. 문법2.1 문단 제목1~6개까지 지원하며 # 갯수에 따라 크기가 달라진다.# TitleTitle## Main SectionMain Section### Sub-SectionSub-Section#### Sub-sub sectionSub-sub section2.2 Block Qoute블럭 쿼터를 생성한다.</description>
-    </item>
-    
-    <item>
-      <title>desc-test</title>
-      <link>/2021/01/desc-test/</link>
-      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/2021/01/desc-test/</guid>
-      <description>
-
-
-</description>
-    </item>
-    
-    <item>
-      <title>나는 너를</title>
-      <link>/2021/01/test/</link>
-      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/2021/01/test/</guid>
-      <description>  
-
-
-
-</description>
     </item>
     
   </channel>
