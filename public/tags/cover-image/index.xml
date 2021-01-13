@@ -6,7 +6,16 @@
     <description>Recent content in cover image on Ynot?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/cover-image/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/cover-image/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome</title>
+      <link>/air/welcome/</link>
+      <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/air/welcome/</guid>
+      <description>Status of Fine Particulate Matter in Seoul (2004-2020)Research Institute of Public Health and Environment of Seoul Metropolitan Goverment operates a network of air monitoring stations that measure fine particulate matter and other air pollutants. This indicator reports on the concentration of fine particulate matter from 2004-2020 and compares it to the South Korea Air Quality Standards established by Ministers of the Environment.Fine particulate matter is an air pollutant.</description>
+    </item>
+    
     <item>
       <title>나는 너를</title>
       <link>/2021/01/test/</link>

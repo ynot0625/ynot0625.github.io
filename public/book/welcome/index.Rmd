@@ -51,3 +51,4 @@ metaAlignment: left
 ### 3.1 링크
 #### 문법: [text](링크)
 #### 예제: [구글](https://www.google.com)
+#### 예제: [네이버](https://www.naver.com)
