@@ -1,11 +1,11 @@
 ---
-title: 나는 너를
-description: 블로그 운영 테스트
+title: 봄날은 간다.
+description: 나의 봄은 언제였는가?
 author: YJ.KIM
 date: '2021-01-07'
 slug: test
 categories: []
-coverImage: //res.cloudinary.com/ynot-gallery/image/upload/v1610006599/samples/landscapes/girl-urban-view.jpg
+coverImage: //res.cloudinary.com/ynot-gallery/image/upload/v1610528706/blog/IMG_20200823_140908_slrfcw.jpg
 coverMeta: out
 #coverImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg
 #coverMeta: out
