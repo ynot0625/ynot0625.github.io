@@ -29,7 +29,7 @@ metaAlignment: left
 
 * **Be Harmful to humans**: Exposure to fine particlulate matter has been associated with several serious health effects including heart and lug disease. Both shor-term(24-hour) and longer-term(a year or more) exposure to fine particluate matter can have negative effects on human health.
 
-The map below summarises South Korea Ambient Air Quality Standard achievement status for fine particluate matter in B.C. air zones, as well as both the annual and 24-hour PM2.5 levels at individual monitoring stations. Summaries are given for each monitoring station where sufficient data was available for the 200402720 reporting period.
+The map below summarises South Korea Ambient Air Quality Standard achievement status for fine particluate matter in Seoul. air zones, as well as both the annual and 24-hour PM2.5 levels at individual monitoring stations. Summaries are given for each monitoring station where sufficient data was available for the 200402720 reporting period.
 
 ### **Fine Particluate Matter(PM2.5)**: South Korea Ambient Air Quality Stnadard
 
