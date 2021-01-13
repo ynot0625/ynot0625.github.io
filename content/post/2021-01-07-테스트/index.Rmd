@@ -14,7 +14,7 @@ coverMeta: out
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 tags:
 - cover image
-thumbnailImage: //res.cloudinary.com/ynot-gallery/image/upload/v1610006701/featured_pl5sn3.png
+thumbnailImage: //res.cloudinary.com/ynot-gallery/image/upload/t_media_lib_thumb/v1610528703/blog/IMG_20180729_172653_ij8g1i.jpg
 thumbnailImagePosition: left
 metaAlignment: left
 

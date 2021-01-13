@@ -1,13 +1,13 @@
 ---
-title: Welcome
+title: R마크다운
 description: 마크다운을 이용한 글작업
 author: ''
 date: '2021-01-12'
 slug: welcome
 categories: []
 tags: []
-coverImage: //res.cloudinary.com/ynot-gallery/image/upload/v1610006599/samples/landscapes/girl-urban-view.jpg
-thumbnailImage: //res.cloudinary.com/ynot-gallery/image/upload/v1610006701/featured_pl5sn3.png
+coverImage: 
+thumbnailImage: //res.cloudinary.com/ynot-gallery/image/upload/t_media_lib_thumb/v1610536639/blog/hex-rmarkdown_tpnhdw.png
 thumbnailImagePosition: left
 metaAlignment: left
 ---

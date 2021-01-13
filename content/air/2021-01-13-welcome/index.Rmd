@@ -5,7 +5,7 @@ author: ''
 date: '2021-01-13'
 slug: welcome
 categories: []
-coverImage: //res.cloudinary.com/ynot-gallery/image/upload/v1610006599/samples/landscapes/girl-urban-view.jpg
+coverImage: //res.cloudinary.com/ynot-gallery/image/upload/v1610528704/blog/IMG_20181103_154821_gwbisv.jpg
 coverMeta: out
 #coverImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg
 #coverMeta: out
@@ -14,27 +14,30 @@ coverMeta: out
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 tags:
 - cover image
-thumbnailImage: //res.cloudinary.com/ynot-gallery/image/upload/v1610006701/featured_pl5sn3.png
+thumbnailImage: //res.cloudinary.com/ynot-gallery/image/upload/t_media_lib_thumb/v1610528704/blog/IMG_20181103_154821_gwbisv.jpg
 thumbnailImagePosition: left
 metaAlignment: left
 ---
->*영어 문장 연습을 위한 보고서 COPY로 문제시 삭제
+>영어 문장 연습을 위한 보고서 COPY로 문제시 삭제
 
-## Status of Fine Particulate Matter in Seoul (2004-2020)
+## Status of Fine Particulate Matter in Seoul (2020)
 
+---
+|  서울시 보건환경연구원은 미세먼지, 오존 등 다양한 대기오염물질들을 감시하기 위하여 대기질모니터링 네트워크를 구축 및 운영하고 있다.
+---
 
 |  Research Institute of Public Health and Environment of Seoul Metropolitan Goverment operates a network of air monitoring stations that measure fine particulate matter and other air pollutants. This indicator reports on the concentration of fine particulate matter from 2004-2020 and compares it to the South Korea Air Quality Standards established by Ministers of the Environment.
 ####
+
 * **Fine particulate matter**: Solid or liquid particles floating in the air are called particluate matter. The smallest of these particles(those that are 2.5 microns or less in diameter, or less than 1/20th the widh of a human hair) are called fine particluate matter(PM2.5). Fine particluate matter comes from many natural and huamn activites, includeing wildfires and emission from prescribed burning, forestry operations, residential woodstoves, and transportation.
 
 * **Be Harmful to humans**: Exposure to fine particlulate matter has been associated with several serious health effects including heart and lug disease. Both shor-term(24-hour) and longer-term(a year or more) exposure to fine particluate matter can have negative effects on human health.
 
-The map below summarises South Korea Ambient Air Quality Standard achievement status for fine particluate matter in Seoul. air zones, as well as both the annual and 24-hour PM2.5 levels at individual monitoring stations. Summaries are given for each monitoring station where sufficient data was available for the 200402720 reporting period.
-
 ### **Fine Particluate Matter(PM2.5)**: South Korea Ambient Air Quality Stnadard
-
-|National ambient air|quality Standard|
+|National ambient air quality Standard|Level|
 |:---:|:---|
 |Yearly|15ug/m3 or less|
 |24-hour|35ug/m3 or less|
 
+
+The map below summarises South Korea Ambient Air Quality Standard achievement status for fine particluate matter in Seoul. air zones, as well as both the annual and 24-hour PM2.5 levels at individual monitoring stations. Summaries are given for each monitoring station where sufficient data was available for the reporting period.

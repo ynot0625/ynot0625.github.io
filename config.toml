@@ -36,15 +36,15 @@ favicon = "/favicon.ico"
   archive = "archives"
 
 [author]
-  name = "Y.J KIM"
-  bio = "think of this and that"
-  job = "Researcher"
+  name = "Aiden"
+  bio = "Think of this and that"
+  job = "Atmospheric scientists"
   location = "South Korea"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
   #gravatarEmail = "redrhrnak@gmail.com"
   # Your profile picture
   # Overwritten by your gravatar image if `author.gravatarEmail` is filled
-  picture = "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
+  picture = "https://res.cloudinary.com/ynot-gallery/image/upload/t_media_lib_thumb/v1610528705/blog/IMG_20200614_115929_1_tizrkp.jpg"
   # Your Twitter username without the @. E.g : thibaudlepretre
   # twitter = "thibaudlepretre"
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
