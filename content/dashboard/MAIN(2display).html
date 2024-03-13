@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<script>
+       setTimeout(function(){
+           location.reload();
+       },300000); // 5000 milliseconds means 5 seconds.
+</script>
+<frameset cols="50%, 50%">//frameset: frame을 묶어주는 단위 / cols(열): 좌우로 배치
+  <frameset rows="50%, 50%">//row(행): 상하로 배치
+    <frame src="contents_of_frame1.html" />//25%
+    <frame src="contents_of_frame3.html">
+  </frameset>
+  <frameset rows="50%, 50%">//row(행): 상하로 배치
+    <frame src="contents_of_frame2.html">
+    <frame src="contents_of_frame4.html">
+  </frameset>
+
+
+
+
+  <frame name="content" src="contents_of_frame3.html" /> 
+  <noframes>// 브라우저가  프레임을 지원하지 않는다면 noframes에 지정한 태그 출력된다.
+    <body>// body 위에 지정하는 frameset
+      <p>This frameset document contains:</p>
+      <ul>
+        <li><a href="contents_of_frame1.html">contents_of_frame1.html</a></li>
+        <li><a href="contents_of_frame2.html">contents_of_frame1.html</a></li>
+        <li><a href="contents_of_frame3.html">contents_of_frame1.html</a></li>
+        <li><a href="contents_of_frame4.html">contents_of_frame1.html</a></li>
+        <li><a href="contents_of_frame5.html">contents_of_frame1.html</a></li>
+        <li><a href="contents_of_frame6.html">contents_of_frame1.html</a></li>
+        <li><a href="contents_of_frame7.html">contents_of_frame1.html</a></li>
+        <li><a href="contents_of_frame8.html">contents_of_frame1.html</a></li>
+        <li><a href="contents_of_frame9.html">contents_of_frame1.html</a></li>
+      </ul>
+    </body>
+
+  </noframes>
+
+</frameset>
+
+</html>

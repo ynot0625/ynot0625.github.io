@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+body {
+  padding-top:0px
+}
+
+
+iframe {
+  align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border: none;
+}
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+       setTimeout(function(){
+           location.reload();
+       },60000); // 5000 milliseconds means 5 seconds.
+</script>
+
+
+<iframe 
+    src="https://earth.nullschool.net/#current/particulates/surface/level/overlay=pm2.5/orthographic=122.05,37.48,900" 
+    frameborder="0"
+    style="display:block; width:100%; height: 97vh"
+    id="myframe">
+</iframe>
+</body>
+</html>
