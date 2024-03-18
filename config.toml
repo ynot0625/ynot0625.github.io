@@ -76,6 +76,18 @@ image="path"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-book\"></i>"
   url = "/book"  
 [[menu.main]]
+  weight = 5
+  identifier = "editorial"
+  name = "editorial"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-book\"></i>"
+  url = "/editorial"  
+[[menu.main]]
+  weight = 5
+  identifier = "adv"
+  name = "adv"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-book\"></i>"
+  url = "/adv"  
+[[menu.main]]
   weight = 4
   identifier = "categories"
   name = "Categories"
