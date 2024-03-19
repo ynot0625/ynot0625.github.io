@@ -1,5 +1,5 @@
 ---
-title: 서울의 벚꽃 명소 TOP 5
+title: 서울의 벚꽃 명소 TOP 6
 author: ''
 date: '2024-03-19'
 slug: 20240319-1
