@@ -47,5 +47,7 @@ tags: []
 5. 얻은 스크립트를 your-new-blog-name/layouts/partials/post/disqus.html에 생성하고 해당 파일에 스크립트를 삽입합니다.
 
 
+위와 같이 적용하면 블로그 포스트의 하단에 Utterances 댓글 플랫폼이 표시되어 사람들이 댓글을 작성할 수 있습니다. 
+![5](image_5.png)
 
-위와 같이 적용하면 블로그 포스트의 하단에 Utterances 댓글 플랫폼이 표시되어 사람들이 댓글을 작성할 수 있습니다. 댓글이 작성되면 앞서 설정한 Github Repository에 새로운 이슈가 생성되고 그 안에 댓글이 달립니다. 또한, 알림이 전송됩니다.
+댓글이 작성되면 앞서 설정한 Github Repository에 새로운 이슈가 생성되고 그 안에 댓글이 달립니다. 
