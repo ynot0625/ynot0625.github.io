@@ -90,12 +90,6 @@ image="path"
   url = "/adv"  
 [[menu.main]]
   weight = 6
-  identifier = "apptech"
-  name = "apptech"
-  pre = "<i class=\"sidebar-button-icon fa fa-solid fa-money-bill\"></i>"
-  url = "/apptech" 
-[[menu.main]]
-  weight = 6
   identifier = "categories"
   name = "Categories"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
