@@ -4,6 +4,8 @@ description: 트럼프노믹스 2.0과 한국 경제
 author: ''
 date: '2025-02-10'
 slug: 트럼프노믹스 2.0과 한국 경제
+coverImage: https://res.cloudinary.com/ynot-gallery/image/upload/v1739175173/blog/23_as08s6.png
+coverMeta: out
 categories:
   - 정치
   - 국제
@@ -20,14 +22,12 @@ keywords:
   - 인플레이션 정치
   - 한미 관계
 coverImage: 
-thumbnailImage: https://res.cloudinary.com/ynot-gallery/image/upload/t_media_lib_thumb/v1739161418/blog/02.38564598.1_dzxctk.jpg
+thumbnailImage: https://res.cloudinary.com/ynot-gallery/image/upload/t_media_lib_thumb/v1739175173/blog/23_as08s6.png
 thumbnailImagePosition: left
 metaAlignment: left
 ---
 
 <!--more-->
-
-![출처=AFP](11.jpg)
 
 # 트럼프노믹스 2.0의 등장
 
