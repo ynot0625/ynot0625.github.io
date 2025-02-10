@@ -23,7 +23,7 @@ output: html_document
 ---
 
 <!--more-->
-![출처=AFP](1.jpg)
+![출처=AFP](11.jpg)
 
 ## 트럼프의 복귀와 공화당의 Red Sweep
 
