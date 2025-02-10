@@ -80,19 +80,19 @@ image="path"
   weight = 4
   identifier = "editorial"
   name = "editorial"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-newspaper\"></i>"
+  pre = "<i class=\"sidebar-button-icon fa-light fa-file\"></i>"
   url = "/editorial"  
 [[menu.main]]
   weight = 5
   identifier = "adv"
   name = "adv"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tv\"></i>"
+  pre = "<i class=\"sidebar-button-icon fa fa-solid fa-tv\"></i>"
   url = "/adv"  
 [[menu.main]]
   weight = 6
   identifier = "apptech"
   name = "apptech"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-money-bill\"></i>"
+  pre = "<i class=\"sidebar-button-icon fa fa-solid fa-money-bill\"></i>"
   url = "/apptech" 
 [[menu.main]]
   weight = 6
