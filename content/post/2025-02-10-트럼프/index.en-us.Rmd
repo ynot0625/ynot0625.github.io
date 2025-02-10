@@ -3,7 +3,7 @@ title: "트럼프의 화려한 컴백: 2025년 미국 정치의 변화와 한국
 author: ""
 date: "2025-02-10"
 slug: []
-coverImage: //res.cloudinary.com/ynot-gallery/image/upload/t_media_lib_thumb/v1739161418/02.38564598.1_dzxctk.jpg
+coverImage: //res.cloudinary.com/ynot-gallery/image/upload/v1739161418/02.38564598.1_dzxctk.jpg
 coverMeta: out
 categories:
   - 정치
