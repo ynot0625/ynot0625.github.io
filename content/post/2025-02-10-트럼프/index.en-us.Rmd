@@ -22,6 +22,9 @@ keywords:
   - 인플레이션 정치
   - 한미 관계
 output: html_document
+thumbnailImage: //res.cloudinary.com/ynot-gallery/image/upload/t_media_lib_thumb/v1739161418/02.38564598.1_dzxctk.jpg
+thumbnailImagePosition: left
+metaAlignment: left
 ---
 
 <!--more-->
