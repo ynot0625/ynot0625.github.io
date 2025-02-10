@@ -4,8 +4,6 @@ description: 2025년 미국 정치의 변화와 한국에 주는 함의
 author: ''
 date: '2025-02-10'
 slug: 2025년 미국 정치의 변화와 한국에 주는 함의
-coverImage: //res.cloudinary.com/ynot-gallery/image/upload/v1739161418/blog/02.38564598.1_dzxctk.jpg
-coverMeta: out
 categories:
   - 정치
   - 국제
@@ -22,7 +20,7 @@ keywords:
   - 인플레이션 정치
   - 한미 관계
 coverImage: 
-thumbnailImage: //res.cloudinary.com/ynot-gallery/image/upload/t_media_lib_thumb/v1610536639/blog/hex-rmarkdown_tpnhdw.png
+thumbnailImage: https://res.cloudinary.com/ynot-gallery/image/upload/t_media_lib_thumb/v1739161418/blog/02.38564598.1_dzxctk.jpg
 thumbnailImagePosition: left
 metaAlignment: left
 ---
