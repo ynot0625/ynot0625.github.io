@@ -2,7 +2,7 @@
 title: 트럼프노믹스 2.0의 등장
 description: 트럼프노믹스 2.0과 한국 경제
 author: ''
-date: '2025-02-10'
+date: '2024-11-10'
 slug: 트럼프노믹스 2.0과 한국 경제
 coverImage: https://res.cloudinary.com/ynot-gallery/image/upload/v1739175173/blog/23_as08s6.png
 coverMeta: out

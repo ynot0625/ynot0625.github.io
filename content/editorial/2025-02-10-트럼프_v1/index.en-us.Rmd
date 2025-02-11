@@ -2,7 +2,7 @@
 title: 트럼프의 화려한 컴백
 description: 2025년 미국 정치의 변화와 한국에 주는 함의
 author: ''
-date: '2025-02-10'
+date: '2024-11-10'
 slug: 2025년 미국 정치의 변화와 한국에 주는 함의
 categories:
   - 정치
