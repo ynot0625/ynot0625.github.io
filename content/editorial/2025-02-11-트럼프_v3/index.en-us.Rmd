@@ -1,5 +1,5 @@
 ---
-title: 미국대선
+title: "미국대선"
 description: 2024년 미국 대선에서 해리스 부통령과 트럼프 전 대통령의 주요 정책을 비교 분석하며, 한국과의 관계 및 국제 정세에 미치는 영향을 다룹니다.
 author: ''
 date: '2024-11-10'
@@ -29,12 +29,12 @@ keywords:
   - 에너지와 기후
   - 북미 관계
   - 대중국 정책
-coverImage: 
 thumbnailImage: https://res.cloudinary.com/ynot-gallery/image/upload/t_media_lib_thumb/v1739175173/blog/23_as08s6.png
 thumbnailImagePosition: left
 metaAlignment: left
 draft: true
 url: /
+
 ---
 
 
