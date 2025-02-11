@@ -34,7 +34,6 @@ thumbnailImagePosition: left
 metaAlignment: left
 draft: true
 url: /
-
 ---
 
 
