@@ -4,7 +4,7 @@ description: 트럼프노믹스 2.0과 한국 경제
 author: ''
 date: '2024-11-09'
 slug: 트럼프노믹스 2.0과 한국 경제
-coverImage: https://res.cloudinary.com/ynot-gallery/image/upload/v1739175173/blog/23_as08s6.png
+coverImage: https://res.cloudinary.com/ynot-gallery/image/upload/t_media_lib_thumb/v1739175173/blog/23_as08s6.png
 coverMeta: out
 categories:
   - 정치
@@ -27,6 +27,7 @@ metaAlignment: left
 ---
 
 <!--more-->
+이미지출처: BBC KOREA
 
 # 트럼프노믹스 2.0의 등장
 
