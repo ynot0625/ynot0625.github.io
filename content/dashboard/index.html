@@ -1,46 +1,297 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
 
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 대시보드</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222; /* Dark background color */
+            color: #fff; /* Light text color */
+        }
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<html>
+        header {
+            background-color: #111; /* Darker background color for header */
+            color: #fff;
+            padding: 4em;
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 6.0em;
+            margin: -60px 0 20px 0;
+        }
+
+        #current-time {
+            font-size: 3.5em;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        section {
+            padding: 8px;
+            border: 1px solid #444; /* Darker border color */
+            border-radius: 5px;
+            text-align: left;
+            margin: -20px 10px;
+            background-color: #333; /* Dark background color for sections */
+        }
+
+        h2 {
+            font-size: 5.0em;
+            margin: 0;
+            color: #fff; /* Light text color */
+        }
+
+        #realTimeData {
+            font-size: 0.3em;
+            color: #282c35; /* Set text color same as background color to hide it */
+        }
+
+        /* Flashing animation for PM10 */
+        @keyframes flash {
+            0%, 50%, 100% {
+                color: red;
+            }
+            25%, 75% {
+                color: inherit;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>실시간 대기질 현황</h1>
+    <p id="current-time"></p>
+</header>
+
+
+
+<div class="grid-container">
+    <section id="pm10">
+        <h2>PM10</h2>
+    </section>
+
+    <section id="ta">
+        <h2>기온</h2>
+    </section>
+
+    <section id="pm25">
+        <h2>PM2.5</h2>
+    </section>
+
+    <section id="ws">
+        <h2>풍속</h2>
+    </section>
+
+    <section id="o3">
+        <h2>O3</h2>
+    </section>
+
+    <section id="wd">
+        <h2>풍향</h2>
+    </section>
+
+    <section id="no2">
+        <h2>NO2</h2>
+    </section>
+
+    <section id="vis">
+        <h2>시정</h2>
+    </section>
+
+    <section id="so2">
+        <h2>SO2</h2>
+    </section>
+
+    <section id="rain">
+        <h2>강수유무</h2>
+    </section>
+
+    <section id="co">
+        <h2>CO</h2>
+    </section>
+
+    <section id="rainfall">
+        <h2>강수량</h2>
+    </section>
+
+
+</div>
+
+<div id="realTimeData">
+    <!-- 데이터가 여기에 표시됩니다 -->
+</div>
+
 <script>
-       setTimeout(function(){
-           location.reload();
-       },300000); // 5000 milliseconds means 5 seconds.
+document.addEventListener("DOMContentLoaded", function () {
+    // 초기 호출로 현재 시간 설정
+    updateCurrentTime();
+
+    // 외부 함수 정의
+    function handleNaNValue(value) {
+        return (parseFloat(value) < 0) ? '-' : value;
+    }
+
+    function getWindDirection16(windDirection16) {
+        const directions = ["북", "북북동", "북동", "동북동", "동", "동남동", "남동", "남남동", "남", "남남서", "남서", "서남서", "서", "서북서", "북서", "북북서"];
+        return directions[windDirection16];
+    }
+
+    function updateSectionData(sectionId, data, parameter, unit) {
+        var h2Element = document.getElementById(sectionId).getElementsByTagName("h2")[0];
+
+        if (h2Element) {
+            // Update styles to left-align parameter and right-align data with unit
+            h2Element.innerHTML = `<span style="float: left;">${parameter}</span><span style="float: right;">${data} ${unit}</span>`;
+
+            // Check if sectionId is "pm10", "pm25", or "o3" and data exceeds the threshold
+            if (
+                (sectionId === "pm10" && parseFloat(data) > 75) ||
+                (sectionId === "pm25" && parseFloat(data) > 35) ||
+                (sectionId === "o3" && parseFloat(data) > 0.09)
+            ) {
+                // Apply flashing animation
+                h2Element.style.animation = "flash 4s infinite";
+            } else {
+                // Remove animation
+                h2Element.style.animation = "none";
+            }
+
+        } else {
+            console.log('Element with ID ' + sectionId + ' not found.');
+        }
+    }
+
+    function updateRealTimeData() {
+        // 현재 시간 생성
+        const now = new Date();
+        // 10분 전의 시간
+        const tenMinutesAgo = new Date(now.getTime() - 10 * 60 * 1000); // 10분을 밀리초로 계산
+
+        // 10분 전의 시간 정보
+        const year = tenMinutesAgo.getFullYear();
+        const month = String(tenMinutesAgo.getMonth() + 1).padStart(2, '0');
+        const day = String(tenMinutesAgo.getDate()).padStart(2, '0');
+        const hour = String(tenMinutesAgo.getHours()).padStart(2, '0');
+
+        // 기상 API URL 설정
+        const apiUrl = `https://apihub.kma.go.kr/api/typ01/url/kma_sfctm2.php?tm=${year}${month}${day}${hour}00&stn=108&help=0&authKey=5aFO0TIuTfehTtEyLq33zA`;
+
+        // 대기질 API URL 설정
+        const airQualityUrl = 'http://openapi.seoul.go.kr:8088/726549736c6169643838634149466d/xml/ListAvgOfSeoulAirQualityService/1/5/';
+
+        // 두 개의 fetch 작업을 병렬로 진행
+        const fetchData1 = fetch(airQualityUrl).then(response => response.text());
+        const fetchData2 = fetch(apiUrl).then(response => response.text());
+
+        // 두 개의 fetch 작업이 모두 완료되면 실행될 새로운 Promise 생성
+        Promise.all([fetchData1, fetchData2])
+            .then(([airData, wdata]) => {
+                // 두 데이터를 displayData 함수에 전달
+                displayData(airData, wdata);
+            })
+            .catch(error => {
+                console.log('Error fetching data:', error);
+            });
+    }
+
+
+    function displayData(airData, wdata) {
+        // NaN 값 처리 함수
+        function handleNaNValue(value) {
+            return (parseFloat(value) === -9) ? '-' : value;
+        }
+
+        // 16방위 풍향 변환 함수
+        function getWindDirection16(windDirection16) {
+            const directions = ["북북동", "북동", "동북동", "동", "동남동", "남동", "남남동", "남", "남남서", "남서", "서남서", "서", "서북서", "북서", "북북서","북" ];
+            return directions[windDirection16];
+        }
+
+        // 서울 대기질 XML 데이터를 파싱
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(airData, "text/xml");
+
+        const pm10 = xmlDoc.getElementsByTagName("PM10")[0].textContent;
+        const pm25 = xmlDoc.getElementsByTagName("PM25")[0].textContent;
+        const o3 = xmlDoc.getElementsByTagName("OZONE")[0].textContent;
+        const no2 = xmlDoc.getElementsByTagName("NITROGEN")[0].textContent;
+        const so2 = xmlDoc.getElementsByTagName("SULFUROUS")[0].textContent;
+        const co = xmlDoc.getElementsByTagName("CARBON")[0].textContent;
+
+        // 기상 데이터 처리
+        const wlines = wdata.split('\n');
+        const wdataValues = wlines[4].split(/\s+/);
+
+        // 풍향을 16방위로 표시
+        const windDirection16 = Math.round(handleNaNValue(wdataValues[2].trim()) / 10) % 16;
+        const windDirection16Str = getWindDirection16(windDirection16);
+
+        // Update individual section data
+        updateSectionData("pm10", pm10, "PM<sub>10</sub>", " μg/m³");
+        updateSectionData("pm25", pm25, "PM<sub>2.5</sub>", " μg/m³");
+        updateSectionData("o3", o3, "O<sub>3</sub>", " ppm");
+        updateSectionData("no2", no2, "NO<sub>2</sub>", " ppm");
+        updateSectionData("so2", so2, "SO<sub>2</sub>", " ppm");
+        updateSectionData("co", co, "CO", " ppm");
+
+        // 기온 업데이트
+        updateSectionData("ta", handleNaNValue(wdataValues[11].trim()), "기온", " ℃");
+
+        // 풍속 업데이트
+        updateSectionData("ws", handleNaNValue(wdataValues[3].trim()), "풍속", " m/s");
+
+        // 풍향 업데이트
+        updateSectionData("wd", windDirection16Str, "풍향", " ");
+
+        // 시정 업데이트
+        updateSectionData("vis", (handleNaNValue(wdataValues[32].trim()) / 100).toFixed(2), "시정", " km");
+
+        // 강수 업데이트
+        updateSectionData("rain", handleNaNValue(wdataValues[15].trim()), "강수", " mm");
+
+        // 일강수 업데이트
+        updateSectionData("rainfall", handleNaNValue(wdataValues[16].trim()), "일강수", " mm");
+    }
+
+    function updateCurrentTime() {
+        var currentTimeElement = document.getElementById("current-time");
+        if (currentTimeElement) {
+            var now = new Date();
+            var formattedTime = now.toLocaleString('ko-KR', { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric' });
+            currentTimeElement.textContent = formattedTime;
+        } else {
+            console.log('Element with ID current-time not found.');
+        }
+    }
+
+    updateRealTimeData();
+
+    // 1분마다 현재 시간 업데이트 (60,000 밀리초)
+    setInterval(updateCurrentTime, 60000);
+
+    // 5초마다 실시간 데이터 업데이트 (5,000 밀리초)
+    setInterval(updateRealTimeData, 5000 * 12 * 5);
+});
 </script>
-<frameset cols="50%, 50%">//frameset: frame을 묶어주는 단위 / cols(열): 좌우로 배치
-  <frameset rows="50%, 50%">//row(행): 상하로 배치
-    <frame src="contents_of_frame1.html" />//25%
-    <frame src="contents_of_frame3.html">
-  </frameset>
-  <frameset rows="50%, 50%">//row(행): 상하로 배치
-    <frame src="contents_of_frame2.html">
-    <frame src="contents_of_frame4.html">
-  </frameset>
 
 
-
-
-  <frame name="content" src="contents_of_frame3.html" /> 
-  <noframes>// 브라우저가  프레임을 지원하지 않는다면 noframes에 지정한 태그 출력된다.
-    <body>// body 위에 지정하는 frameset
-      <p>This frameset document contains:</p>
-      <ul>
-        <li><a href="contents_of_frame1.html">contents_of_frame1.html</a></li>
-        <li><a href="contents_of_frame2.html">contents_of_frame1.html</a></li>
-        <li><a href="contents_of_frame3.html">contents_of_frame1.html</a></li>
-        <li><a href="contents_of_frame4.html">contents_of_frame1.html</a></li>
-        <li><a href="contents_of_frame5.html">contents_of_frame1.html</a></li>
-        <li><a href="contents_of_frame6.html">contents_of_frame1.html</a></li>
-        <li><a href="contents_of_frame7.html">contents_of_frame1.html</a></li>
-        <li><a href="contents_of_frame8.html">contents_of_frame1.html</a></li>
-        <li><a href="contents_of_frame9.html">contents_of_frame1.html</a></li>
-      </ul>
-    </body>
-
-  </noframes>
-
-</frameset>
-
+</body>
 </html>
