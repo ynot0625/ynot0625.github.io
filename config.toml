@@ -123,7 +123,7 @@ image="path"
   identifier = "dashboard"
   name = "Dashboard"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-globe\"></i>"
-  url = "/dashboard/index.html"
+  url = "https://github.com/ynot0625/ynot0625.github.io/blob/main/content/dashboard/index.html"
   #target = "_blank"
 
 #[[menu.links]]
