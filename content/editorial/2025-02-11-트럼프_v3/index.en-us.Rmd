@@ -33,6 +33,8 @@ coverImage:
 thumbnailImage: https://res.cloudinary.com/ynot-gallery/image/upload/t_media_lib_thumb/v1739175173/blog/23_as08s6.png
 thumbnailImagePosition: left
 metaAlignment: left
+draft: true
+url: /
 ---
 
 
