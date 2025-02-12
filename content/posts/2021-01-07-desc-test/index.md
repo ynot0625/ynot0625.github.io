@@ -1,0 +1,24 @@
+---
+title: desc-test
+author: ''
+date: '2021-01-07'
+slug: desc-test
+categories: []
+tags: []
+keywords:
+  - tech
+description: leaflet 기능이 RMarkdown 파일에서도 정상적으로 작동하나요?
+output: html_document
+thumbnailImage: //res.cloudinary.com/ynot-gallery/image/upload/v1610366278/blog/537838cd8ce9068453a2d1ab01cd4ad9_jzxouj.jpg
+thumbnailImagePosition: left
+metaAlignment: left
+---
+
+
+
+<!--more-->
+
+
+
+![my graph](m.html){height="500" width=100% }
+
