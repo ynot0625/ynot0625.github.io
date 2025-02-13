@@ -4,6 +4,7 @@ defaultContentLanguage: en-us
 title: Ynot?
 theme: hugo-tranquilpeak-theme
 disqusShortname: Ynot
+googleAnalytics: UA-186842731-1
 paginate: 7
 canonifyurls: yes
 permalinks:
@@ -20,7 +21,7 @@ markup:
     startLevel: 1
 author:
   bio: Think of this and that
-  gravatarEmail: redrhrnak@gmail.com
+# gravatarEmail: redrhrnak@gmail.com
   job: Atmospheric scientists
   location: South Korea
   name: Aiden
@@ -30,7 +31,7 @@ menu:
     - identifier: github
       name: GitHub
       pre: <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
-      url: https://github.com/kakawait
+      url: https://github.com/ynot0625
       weight: 1
 #    - identifier: stackoverflow
 #      name: Stack Overflow
