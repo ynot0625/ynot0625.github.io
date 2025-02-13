@@ -3,7 +3,7 @@ languageCode: ko-kr
 defaultContentLanguage: en-us
 title: Ynot?
 theme: hugo-tranquilpeak-theme
-disqusShortname: Ynot
+disqusShortname: ynot-1
 googleAnalytics: UA-186842731-1
 paginate: 7
 canonifyurls: yes
