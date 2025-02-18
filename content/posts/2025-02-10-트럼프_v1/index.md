@@ -19,7 +19,7 @@ keywords:
   - 미국 정치 변화
   - 인플레이션 정치
   - 한미 관계
-coverImage: 
+coverImage: https://res.cloudinary.com/ynot-gallery/image/upload/t_media_lib_thumb/v1739161418/blog/02.38564598.1_dzxctk.jpg 
 thumbnailImage: https://res.cloudinary.com/ynot-gallery/image/upload/t_media_lib_thumb/v1739161418/blog/02.38564598.1_dzxctk.jpg
 thumbnailImagePosition: left
 metaAlignment: left
